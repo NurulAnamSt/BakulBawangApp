@@ -1,0 +1,31 @@
+[
+    {
+        "id": "20250520051112",
+        "date": "20/05/2025 05:11",
+        "username": "admin",
+        "customer": {
+            "name": "Anam",
+            "phone": "a",
+            "address": "a"
+        },
+        "items": [
+            {
+                "id": 1,
+                "name": "Bawang Merah",
+                "price": 37905,
+                "quantity": 1
+            }
+        ],
+        "total": 52905,
+        "payment": {
+            "method": "Transfer BRI",
+            "status": "pending"
+        },
+        "shipping": {
+            "method": "JNE",
+            "cost": 15000,
+            "estimate": "2-3 hari"
+        },
+        "status": "pending"
+    }
+]
