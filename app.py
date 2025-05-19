@@ -390,8 +390,7 @@ def show_checkout_success():
     """)
     
     whatsapp_url = f"https://wa.me/{WHATSAPP_NUMBER}?text=Halo%20Admin,%20saya%20telah%20melakukan%20pembayaran"
-    if st.button("💬 Hubungi via WhatsApp", type="primary"):
-        webbrowser.open(whatsapp_url)
+st.markdown(f'<a href="{whatsapp_url}" target="_blank">💬 Hubungi via WhatsApp</a>', unsafe_allow_html=True)
     
     if st.button("🏠 Kembali ke Beranda"):
         st.session_state.checkout_success = False
@@ -451,7 +450,7 @@ def show_admin_report():
                 # Tombol WhatsApp
                 phone = trans['customer']['phone']
                 whatsapp_url = f"https://wa.me/{WHATSAPP_NUMBER}?text=Halo%20Admin,%20saya%20ingin%20konfirmasi%20pesanan%20#{trans['id']}"
-                st.link_button("💬 Hubungi Customer", whatsapp_url)
+st.markdown(f'<a href="{whatsapp_url}" target="_blank">💬 Hubungi Customer</a>', unsafe_allow_html=True)
 
 def update_transaction_status(trans_id, new_status):
     """Update status transaksi"""
